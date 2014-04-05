@@ -18,6 +18,11 @@
 		DA1C79FF18EEF1210051CD7D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1C79DE18EEF1210051CD7D /* Cocoa.framework */; };
 		DA1C7A0718EEF1210051CD7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA1C7A0518EEF1210051CD7D /* InfoPlist.strings */; };
 		DA1C7A0918EEF1210051CD7D /* BeaconBeamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1C7A0818EEF1210051CD7D /* BeaconBeamTests.m */; };
+		DA1C7A1318EF03C80051CD7D /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1C7A1218EF03C80051CD7D /* IOBluetooth.framework */; };
+		DA1C7A1618EF04750051CD7D /* DBBeaconRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1C7A1518EF04750051CD7D /* DBBeaconRegion.m */; };
+		DA76C6B818EFF077003D87AC /* DBPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA76C6B618EFF077003D87AC /* DBPreferencesController.m */; };
+		DA76C6B918EFF077003D87AC /* DBPreferencesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA76C6B718EFF077003D87AC /* DBPreferencesController.xib */; };
+		DA76C6BE18F0218A003D87AC /* NSString+EmptyValidating.m in Sources */ = {isa = PBXBuildFile; fileRef = DA76C6BD18F0218A003D87AC /* NSString+EmptyValidating.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,14 @@
 		DA1C7A0418EEF1210051CD7D /* BeaconBeamTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeaconBeamTests-Info.plist"; sourceTree = "<group>"; };
 		DA1C7A0618EEF1210051CD7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA1C7A0818EEF1210051CD7D /* BeaconBeamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconBeamTests.m; sourceTree = "<group>"; };
+		DA1C7A1218EF03C80051CD7D /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		DA1C7A1418EF04750051CD7D /* DBBeaconRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBBeaconRegion.h; sourceTree = "<group>"; };
+		DA1C7A1518EF04750051CD7D /* DBBeaconRegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBBeaconRegion.m; sourceTree = "<group>"; };
+		DA76C6B518EFF077003D87AC /* DBPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBPreferencesController.h; sourceTree = "<group>"; };
+		DA76C6B618EFF077003D87AC /* DBPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBPreferencesController.m; sourceTree = "<group>"; };
+		DA76C6B718EFF077003D87AC /* DBPreferencesController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBPreferencesController.xib; sourceTree = "<group>"; };
+		DA76C6BC18F0218A003D87AC /* NSString+EmptyValidating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EmptyValidating.h"; sourceTree = "<group>"; };
+		DA76C6BD18F0218A003D87AC /* NSString+EmptyValidating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EmptyValidating.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1C7A1318EF03C80051CD7D /* IOBluetooth.framework in Frameworks */,
 				DA1C79DF18EEF1210051CD7D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +109,7 @@
 		DA1C79DD18EEF1210051CD7D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA1C7A1218EF03C80051CD7D /* IOBluetooth.framework */,
 				DA1C79DE18EEF1210051CD7D /* Cocoa.framework */,
 				DA1C79FD18EEF1210051CD7D /* XCTest.framework */,
 				DA1C79E018EEF1210051CD7D /* Other Frameworks */,
@@ -115,11 +130,14 @@
 		DA1C79E418EEF1210051CD7D /* BeaconBeam */ = {
 			isa = PBXGroup;
 			children = (
+				DA76C6BB18F0212A003D87AC /* Utils */,
 				DA1C79F018EEF1210051CD7D /* DBAppDelegate.h */,
 				DA1C79F118EEF1210051CD7D /* DBAppDelegate.m */,
-				DA1C79F318EEF1210051CD7D /* MainMenu.xib */,
-				DA1C79F618EEF1210051CD7D /* Images.xcassets */,
-				DA1C79E518EEF1210051CD7D /* Supporting Files */,
+				DA1C7A1418EF04750051CD7D /* DBBeaconRegion.h */,
+				DA1C7A1518EF04750051CD7D /* DBBeaconRegion.m */,
+				DA76C6B518EFF077003D87AC /* DBPreferencesController.h */,
+				DA76C6B618EFF077003D87AC /* DBPreferencesController.m */,
+				DA76C6BA18EFFC8C003D87AC /* Resouces */,
 			);
 			path = BeaconBeam;
 			sourceTree = "<group>";
@@ -152,6 +170,26 @@
 				DA1C7A0518EEF1210051CD7D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA76C6BA18EFFC8C003D87AC /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				DA76C6B718EFF077003D87AC /* DBPreferencesController.xib */,
+				DA1C79F318EEF1210051CD7D /* MainMenu.xib */,
+				DA1C79F618EEF1210051CD7D /* Images.xcassets */,
+				DA1C79E518EEF1210051CD7D /* Supporting Files */,
+			);
+			name = Resouces;
+			sourceTree = "<group>";
+		};
+		DA76C6BB18F0212A003D87AC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DA76C6BC18F0218A003D87AC /* NSString+EmptyValidating.h */,
+				DA76C6BD18F0218A003D87AC /* NSString+EmptyValidating.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +271,7 @@
 			files = (
 				DA1C79E918EEF1210051CD7D /* InfoPlist.strings in Resources */,
 				DA1C79F718EEF1210051CD7D /* Images.xcassets in Resources */,
+				DA76C6B918EFF077003D87AC /* DBPreferencesController.xib in Resources */,
 				DA1C79EF18EEF1210051CD7D /* Credits.rtf in Resources */,
 				DA1C79F518EEF1210051CD7D /* MainMenu.xib in Resources */,
 			);
@@ -253,6 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1C7A1618EF04750051CD7D /* DBBeaconRegion.m in Sources */,
+				DA76C6BE18F0218A003D87AC /* NSString+EmptyValidating.m in Sources */,
+				DA76C6B818EFF077003D87AC /* DBPreferencesController.m in Sources */,
 				DA1C79F218EEF1210051CD7D /* DBAppDelegate.m in Sources */,
 				DA1C79EB18EEF1210051CD7D /* main.m in Sources */,
 			);
@@ -467,6 +509,7 @@
 				DA1C7A0E18EEF1210051CD7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA1C7A0F18EEF1210051CD7D /* Build configuration list for PBXNativeTarget "BeaconBeamTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +518,7 @@
 				DA1C7A1118EEF1210051CD7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
