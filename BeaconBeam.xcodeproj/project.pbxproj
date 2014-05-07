@@ -130,11 +130,10 @@
 		DA1C79E418EEF1210051CD7D /* BeaconBeam */ = {
 			isa = PBXGroup;
 			children = (
+				DA349318191A3AED004D8041 /* Models */,
 				DA76C6BB18F0212A003D87AC /* Utils */,
 				DA1C79F018EEF1210051CD7D /* DBAppDelegate.h */,
 				DA1C79F118EEF1210051CD7D /* DBAppDelegate.m */,
-				DA1C7A1418EF04750051CD7D /* DBBeaconRegion.h */,
-				DA1C7A1518EF04750051CD7D /* DBBeaconRegion.m */,
 				DA76C6B518EFF077003D87AC /* DBPreferencesController.h */,
 				DA76C6B618EFF077003D87AC /* DBPreferencesController.m */,
 				DA76C6BA18EFFC8C003D87AC /* Resouces */,
@@ -170,6 +169,15 @@
 				DA1C7A0518EEF1210051CD7D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA349318191A3AED004D8041 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA1C7A1418EF04750051CD7D /* DBBeaconRegion.h */,
+				DA1C7A1518EF04750051CD7D /* DBBeaconRegion.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		DA76C6BA18EFFC8C003D87AC /* Resouces */ = {

@@ -89,7 +89,7 @@ static NSString *const kDBAppDelegateUserDefaultsFirstRunKey = @"FirstRun";
                                                                          queue:nil
                                                                        options:@{CBPeripheralManagerOptionShowPowerAlertKey: @YES}];
         NSLog(@"Start Advertising ...");
-        item.title = @"Stop";
+        item.title = NSLocalizedString(@"StopBeacon", nil);
         item.tag = kDBAppDelegateStopBeaconTag;
         return;
     }
@@ -98,7 +98,7 @@ static NSString *const kDBAppDelegateUserDefaultsFirstRunKey = @"FirstRun";
     
     NSLog(@"Stop Advertising ...");
     
-    item.title = @"Start";
+    item.title = NSLocalizedString(@"StartBeacon", nil);
     item.tag = kDBAppDelegateStartBeaconTag;
 }
 
